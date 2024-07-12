@@ -9,13 +9,8 @@ repos:
     rev: 22.10.0
     hooks:
     -   id: black
--   repo: https://github.com/PyCQA/bandit
-    rev: 1.7.4
-    hooks:
-    -   id: bandit
-        args: ["--skip=B101"]
--   repo: git@github.com:awslabs/automated-security-helper.git
-    rev: '1.1.0-e-01Dec2023' # update with the latest tagged version in the repository
+-   repo: https://github.com/awslabs/automated-security-helper
+    rev: '1.1.0-e-01Dec2023'
     hooks:
     - id: ash
       name: scan files using ash 
